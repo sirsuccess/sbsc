@@ -1,0 +1,47 @@
+.bigCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px dashed rgba(19, 36, 78, 0.07);
+    /* box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07); */
+}
+.top{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-name {
+    font-family: SourceSansPro;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #13244e;
+}
+
+.rectangle {
+    width: 155px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: rgba(81, 44, 98, 0.2);
+    font-size: 21px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    color: #512c62;
+    text-align: center;
+    vertical-align: center;
+}
+
+#card-select{
+    width: 76px;
+  height: 26px;
+  border-radius: 6px;
+  background-color: rgba(77, 213, 153, 0.2);
+}
