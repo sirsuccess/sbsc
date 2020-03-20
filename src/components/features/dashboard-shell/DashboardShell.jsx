@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import {Redirect, withRouter} from "react-router-dom"
 import "antd/dist/antd.css";
+import "./dashboardShell.css"
 import { Layout, Menu } from "antd";
 import {
   MenuUnfoldOutlined,
@@ -77,10 +78,10 @@ function SiderDemo(props) {
             </div>
           </Header>
           <Content
-            className="site-layout-background"
+            className="content"
             style={{
               margin: "24px 16px",
-              padding: 24,
+              // padding: 24,
               minHeight: 280
             }}
           >
