@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
+
 import Spinner from "./components/commons/spinner";
 import NotFound from "./components/commons/Error";
 
