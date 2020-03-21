@@ -1,7 +1,7 @@
-import React,{useState} from "react";
-import {Redirect, withRouter} from "react-router-dom"
+import React, { useState } from "react";
+import { Redirect, withRouter } from "react-router-dom";
 import "antd/dist/antd.css";
-import "./dashboardShell.css"
+import "./dashboardShell.css";
 import { Layout, Menu } from "antd";
 import {
   MenuUnfoldOutlined,
@@ -11,28 +11,24 @@ import {
   SendOutlined
 } from "@ant-design/icons";
 
-import Profile from "../../features/profile/Profile"
+import Profile from "../../features/profile/Profile";
 
 const { Header, Sider, Content } = Layout;
 function SiderDemo(props) {
-  const InitialCollapsed=  false
-  const [collapsedState, setCollapsed] = useState(InitialCollapsed)
-  
+  const InitialCollapsed = false;
+  const [collapsedState, setCollapsed] = useState(InitialCollapsed);
 
   //toggle sidebar
   const toggle = () => {
-    setCollapsed(
-       !collapsedState
-    );
+    setCollapsed(!collapsedState);
   };
 
-  const MenuItemRoute = (key)=>(
-    console.log("hello im herwe", key),
-    <Redirect push to="/somewhere/else" />
+  const MenuItemRoute = key => (
+    console.log("hello im herwe", key), (<Redirect push to="/somewhere/else" />)
+  );
 
-  )
-  
-    return (
+  return (
+    <div className="container">
       <Layout>
         <Sider
           trigger={null}
@@ -40,14 +36,17 @@ function SiderDemo(props) {
           collapsed={collapsedState}
           className="sideBar"
         >
-         
           {/* <div className="logo" /> */}
           <div className="logoSec">
-
-          <span className= "logo-express">S</span>
-          {!collapsedState?<span>Express Lands</span>:""}
+            <span className="logo-express">S</span>
+            {!collapsedState ? <span>Express Lands</span> : ""}
           </div>
-          <Menu theme="dark" className="Menu" mode="inline" defaultSelectedKeys={["1"]}>
+          <Menu
+            theme="dark"
+            className="Menu"
+            mode="inline"
+            defaultSelectedKeys={["1"]}
+          >
             <Menu.Item key="1" className="MenuItem" onClick={MenuItemRoute}>
               <HomeOutlined />
               <span>Dashboard</span>
@@ -63,18 +62,20 @@ function SiderDemo(props) {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background header" style={{ padding: 0 }}>
+          <Header
+            className="site-layout-background header"
+            style={{ padding: 0 }}
+          >
             {React.createElement(
-              collapsedState? MenuUnfoldOutlined : MenuFoldOutlined,
+              collapsedState ? MenuUnfoldOutlined : MenuFoldOutlined,
               {
                 className: "trigger",
                 onClick: toggle
               }
             )}
             <div className="right-nav">
-              <img src="./assets/icons/bell.svg"/>
-            <Profile/>
-            
+              <img src="./assets/icons/bell.svg" className="right-nav-img"/>
+              <Profile />
             </div>
           </Header>
           <Content
@@ -89,8 +90,8 @@ function SiderDemo(props) {
           </Content>
         </Layout>
       </Layout>
-    );
-  
+    </div>
+  );
 }
 
 export default withRouter(SiderDemo);

@@ -1,0 +1,13 @@
+.profile {
+    line-height: 1.18;
+    margin-right: 16px;
+    color: #000000;
+    font-size: 11px;
+    font-family: SourceSansPro;
+}
+
+.profile span{
+    color: #000000;
+    font-size: 15px;
+  font-weight: 600;
+}

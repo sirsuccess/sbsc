@@ -25,11 +25,10 @@ export default function bigCard({ items }) {
     <div className="bigCard">
       <BigDataTop topData={{ img, name, value, ValBgColor }} />
       <div className="bigcardMidle">
-
-      <ProgressCircle pecentageDate={{ percentage, circleColor }} />
-      <CardTotal
-        transaction={{ name, spentImg, spentAmount, balImag, balAmount }}
-      />
+        <ProgressCircle pecentageDate={{ percentage, circleColor }} />
+        <CardTotal
+          transaction={{ name, spentImg, spentAmount, balImag, balAmount }}
+        />
       </div>
     </div>
   );
