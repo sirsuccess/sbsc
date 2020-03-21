@@ -35,7 +35,7 @@
   border-radius: 50%;
   margin: 2em 0em !important;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   margin-top: 2em;
   margin-right: 0.5em ! important;
 }
@@ -74,6 +74,14 @@
 
 .right-nav {
   margin-left: auto !important;
+display: flex;
+align-items: center;
+
+}
+
+.right-nav-img {
+  margin-right: 1em;
+  cursor: pointer;
 }
 
 .header {

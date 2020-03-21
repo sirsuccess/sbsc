@@ -74,7 +74,7 @@ function SiderDemo(props) {
               }
             )}
             <div className="right-nav">
-              <img src="./assets/icons/bell.svg" />
+              <img src="./assets/icons/bell.svg" className="right-nav-img"/>
               <Profile />
             </div>
           </Header>
