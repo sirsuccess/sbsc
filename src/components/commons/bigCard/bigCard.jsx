@@ -1,16 +1,36 @@
-import React from "react"
+import React from "react";
 
-import ProgressCircle from "../ProgressCircle"
-import BigDataTop from "../bigCardTop/bigCardTop"
-import "./bigCard.css"
+import ProgressCircle from "../ProgressCircle";
+import BigDataTop from "../bigCardTop/bigCardTop";
+import CardTotal from "../cardTotal/CardTotal";
+import "./bigCard.css";
 
+export default function bigCard({ items }) {
+  // console.log("items", items);
 
-export default function bigCard(params) {
+  const {
+    img,
+    name,
+    value,
+    ValBgColor,
+    percentage,
+    circleColor,
+    spentImg,
+    spentAmount,
+    balImag,
+    balAmount
+  } = items;
 
-    return(
+  return (
     <div className="bigCard">
-        <BigDataTop />
-    <ProgressCircle/>
-    </div>)
-    
+      <BigDataTop topData={{ img, name, value, ValBgColor }} />
+      <div className="bigcardMidle">
+
+      <ProgressCircle pecentageDate={{ percentage, circleColor }} />
+      <CardTotal
+        transaction={{ name, spentImg, spentAmount, balImag, balAmount }}
+      />
+      </div>
+    </div>
+  );
 }
