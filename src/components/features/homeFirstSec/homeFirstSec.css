@@ -1,6 +1,10 @@
 .homeFirstSec {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    /* width: 100%; */
 }
 
+.cardBig{
+    /* width: 100%; */
+    margin-right: 12px;
+}
