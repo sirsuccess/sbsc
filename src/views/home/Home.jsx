@@ -3,7 +3,7 @@ import React from "react";
 import DasboardShell from "../../components/features/dashboard-shell/DashboardShell";
 import HomeFirstSec from "../../components/features/homeFirstSec/homeFirstSec";
 import DashboardDate from "../../components/commons/DashboardDate/DashboardDate";
-import Chart from  "../../components/commons/graph/Graph"
+import Chart from  "../../components/commons/graph/chart"
 
 import "./Home.css"
 
