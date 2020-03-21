@@ -5,4 +5,13 @@
     box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
     background-color: #ffffff;
     margin-bottom: 2em;
+    color: #13244e;
+    font-size: 14px;
+}
+
+.bigcardMidle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
 }

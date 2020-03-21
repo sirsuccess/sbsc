@@ -5,10 +5,11 @@ import 'antd/dist/antd.css';
 import { Progress } from 'antd';
 
 
-export default function ProgressCircle(params) {
+export default function ProgressCircle({pecentageDate}) {
+  const {percentage, circleColor}=pecentageDate
   return (
-    <div className="ProgressCircle">
-      <Progress type="circle" percent={64} format={() => '64% Remaining'} strokeColor="#6915cf" trailColor="#e5e5e5" width={100}/>
+    <div className="ProgressCircle" >
+      <Progress type="circle" percent={percentage} format={() => `${percentage}% Remaining`} strokeColor={circleColor} trailColor="#e5e5e5" width={150} strokeWidth={8}/>
     </div>
   );
 }

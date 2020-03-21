@@ -44,7 +44,7 @@ function SiderDemo(props) {
           {/* <div className="logo" /> */}
           <div className="logoSec">
 
-          <span className= "logo">S</span>
+          <span className= "logo-express">S</span>
           {!collapsedState?<span>Express Lands</span>:""}
           </div>
           <Menu theme="dark" className="Menu" mode="inline" defaultSelectedKeys={["1"]}>

@@ -26,6 +26,7 @@
 .rectangle {
     width: 155px;
     height: 35px;
+    padding-top: 0.2em;
     border-radius: 6px;
     background-color: rgba(81, 44, 98, 0.2);
     font-size: 21px;

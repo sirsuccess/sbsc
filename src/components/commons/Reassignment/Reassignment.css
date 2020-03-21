@@ -5,4 +5,33 @@
     box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
     background-color: #ffffff;
     margin-bottom: 2em;
+    color: #13244e;
+    font-size: 17px;
+}
+.top-ressignment{
+
+    border-bottom: 1px dashed rgba(19, 36, 78, 0.07);
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+}
+.top-img{
+    margin-right: 1em;
+}
+
+.val {
+    width: 343px;
+    height: 71px;
+    border-radius: 8px;
+    background-color: #f0f3f9;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.59;
+    letter-spacing: normal;
+    color: #000000;
+    font-size: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 0.7em;
 }

@@ -1,19 +1,21 @@
 import React from "react";
 
 import Bigcard from "../../commons/bigCard/bigCard";
-import Data from "../../../Data/ReassignmentData";
+import ReassignmentData from "../../../Data/ReassignmentData";
+import CardData from "../../../Data/cardData";
 import Reassignment from "../../commons/Reassignment/Reassignment";
 import "./homeFirstSec.css";
 
-export default function HomeFirstSec(params) {
+export default function HomeFirstSec() {
   return (
     <div className="homeFirstSec">
       <div className="cardBig">
-        <Bigcard />
-        <Bigcard />
+        {CardData.map(items => (
+        <Bigcard items={items }/>
+        ))}
       </div>
       <div>
-        {Data.map(items => (
+        {ReassignmentData.map(items => (
           <Reassignment items={items } />
         ))}
       </div>
