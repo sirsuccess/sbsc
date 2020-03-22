@@ -14,7 +14,7 @@ export default function HomeFirstSec() {
         <Bigcard items={items }/>
         ))}
       </div>
-      <div>
+      <div className="reassignment">
         {ReassignmentData.map(items => (
           <Reassignment items={items } />
         ))}

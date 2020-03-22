@@ -3,6 +3,7 @@ import React from "react";
 import ProgressCircle from "../ProgressCircle";
 import BigDataTop from "../bigCardTop/bigCardTop";
 import CardTotal from "../cardTotal/CardTotal";
+
 import "./bigCard.css";
 
 export default function bigCard({ items }) {
@@ -13,6 +14,7 @@ export default function bigCard({ items }) {
     name,
     value,
     ValBgColor,
+    valColor,
     percentage,
     circleColor,
     spentImg,
@@ -23,7 +25,7 @@ export default function bigCard({ items }) {
 
   return (
     <div className="bigCard">
-      <BigDataTop topData={{ img, name, value, ValBgColor }} />
+      <BigDataTop topData={{ img, name, value, ValBgColor, valColor }} />
       <div className="bigcardMidle">
         <ProgressCircle pecentageDate={{ percentage, circleColor }} />
         <CardTotal

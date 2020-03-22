@@ -22,7 +22,6 @@
   align-items: center;
   margin-left: 16px;
   margin-right: 5px;
-  font-family: SourceSansPro;
   font-size: 16px;
   font-weight: 600;
 }
@@ -74,8 +73,8 @@
 
 .right-nav {
   margin-left: auto !important;
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -89,4 +88,18 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.Approvals {
+  /* background-color: #fff; */
+  /* height: 60px; */
+  /* width: 40px; */
+  /* border-radius: 100%; */
+}
+.content{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 24px;
+  
 }

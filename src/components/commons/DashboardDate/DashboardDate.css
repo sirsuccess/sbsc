@@ -1,25 +1,19 @@
 .dashboardTitle {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
 }
 
 .dbTitle {
     font-family: France;
     font-size: 22px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.27;
-    letter-spacing: normal;
     color: #13244e;
 }
 
 .date {
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.43;
-    letter-spacing: normal;
     color: #000000;
 }

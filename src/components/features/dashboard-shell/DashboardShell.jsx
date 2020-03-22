@@ -74,20 +74,13 @@ function SiderDemo(props) {
               }
             )}
             <div className="right-nav">
-              <img src="./assets/icons/bell.svg" className="right-nav-img"/>
+              <img src="./assets/icons/bell.svg" className="right-nav-img" />
               <Profile />
             </div>
           </Header>
-          <Content
-            className="content"
-            style={{
-              margin: "24px 16px",
-              // padding: 24,
-              minHeight: 280
-            }}
-          >
-            {props.children}
-          </Content>
+          
+            <div className="content">{props.children}</div>
+          
         </Layout>
       </Layout>
     </div>

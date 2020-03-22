@@ -13,7 +13,6 @@
     justify-content: space-between;
 }
 .top-name {
-    font-family: SourceSansPro;
     font-size: 17px;
     font-weight: 500;
     font-stretch: normal;
@@ -45,4 +44,10 @@
   height: 26px;
   border-radius: 6px;
   background-color: rgba(77, 213, 153, 0.2);
+  outline-style: none;
+  border: none;
+}
+
+option{
+    color: #4dd599 !important;
 }
