@@ -1,8 +1,8 @@
-/* .container {
-  max-width: 1000px;
+.container {
+  max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-} */
+}
 
 .trigger {
   font-size: 18px;
@@ -66,9 +66,7 @@
   width: 90% !important;
   margin: 0 auto !important;
   border-radius: 4px;
-  /* background-color: #0093dd; */
-  /* margin-left: auto;
-    margin-right: auto; */
+
 }
 
 .right-nav {
@@ -96,10 +94,11 @@
   /* width: 40px; */
   /* border-radius: 100%; */
 }
-.content{
+
+.content {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 16px 24px;
-  
+
 }

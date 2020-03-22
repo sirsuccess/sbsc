@@ -1,14 +1,35 @@
 .homeFirstSec {
     display: flex;
-    align-items: center;
-    /* width: 100%; */
+    align-items: flex-start;
     width: 100%;
 }
 
-.cardBig{
+.cardBig {
     width: 70%;
     margin-right: 12px;
 }
-.reassignment{
+
+.reassignment {
     width: 30%;
+}
+
+
+@media all and (max-width: 999px) {
+    .homeFirstSec {
+        flex-direction: column;
+
+    }
+
+    .cardBig {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    .reassignment {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
