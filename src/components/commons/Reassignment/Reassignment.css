@@ -1,26 +1,26 @@
 .Reassignment {
-    /* width: 385px; */
     width: 100%;
-    height: 165px;
     border-radius: 6px;
     box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
     background-color: #ffffff;
-    margin-bottom: 8px;
+    margin-bottom: 5%;
     color: #13244e;
     font-size: 17px;
+    padding-bottom: 40px;
 }
-.top-ressignment{
+
+.top-ressignment {
 
     border-bottom: 1px dashed rgba(19, 36, 78, 0.07);
     padding: 0.5em 1em;
     margin-bottom: 1em;
 }
-.top-img{
+
+.top-img {
     margin-right: 1em;
 }
 
 .val {
-    /* width: 343px; */
     width: 90%;
     height: 71px;
     border-radius: 8px;

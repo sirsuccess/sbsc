@@ -1,14 +1,20 @@
-.chartSec{
+.chartSec {
     display: flex;
     justify-content: space-between;
 }
 
-.circle{
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.11;
-  letter-spacing: normal;
-  color: #000000;
+.circle {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+@media all and (max-width: 1110px) {
+    .chartSec {
+        flex-direction: column;
+    }
 }

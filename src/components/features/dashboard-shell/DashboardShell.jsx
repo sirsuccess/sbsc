@@ -13,7 +13,7 @@ import {
 
 import Profile from "../../features/profile/Profile";
 
-const { Header, Sider, Content } = Layout;
+const { Header, Sider } = Layout;
 function SiderDemo(props) {
   const InitialCollapsed = false;
   const [collapsedState, setCollapsed] = useState(InitialCollapsed);
@@ -23,9 +23,8 @@ function SiderDemo(props) {
     setCollapsed(!collapsedState);
   };
 
-  const MenuItemRoute = key => (
-    console.log("hello im herwe", key), (<Redirect push to="/somewhere/else" />)
-  );
+  // Route Navbar
+  const MenuItemRoute = key => <Redirect push to="/approval" />;
 
   return (
     <div className="container">
@@ -36,7 +35,6 @@ function SiderDemo(props) {
           collapsed={collapsedState}
           className="sideBar"
         >
-          {/* <div className="logo" /> */}
           <div className="logoSec">
             <span className="logo-express">S</span>
             {!collapsedState ? <span>Express Lands</span> : ""}
@@ -74,13 +72,12 @@ function SiderDemo(props) {
               }
             )}
             <div className="right-nav">
-              <img src="./assets/icons/bell.svg" className="right-nav-img" />
+              <img src="./assets/icons/bell.svg" alt="icon" className="right-nav-img" />
               <Profile />
             </div>
           </Header>
-          
-            <div className="content">{props.children}</div>
-          
+
+          <div className="content">{props.children}</div>
         </Layout>
       </Layout>
     </div>

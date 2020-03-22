@@ -7,11 +7,13 @@
     line-height: 1.25;
     color: #13244e;
 }
-.innerSpent{
+
+.innerSpent {
     margin-right: 3em !important;
 }
 
-.innerSpent span, .spentVal{
+.innerSpent span,
+.spentVal {
     font-size: 18px;
-  font-weight: 600;
+    font-weight: 600;
 }
