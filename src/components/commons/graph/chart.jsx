@@ -10,15 +10,21 @@ import {
   Tooltip,
   Legend
 } from "recharts";
-import "./chart.css"
+import "./chart.css";
 
 export default function BarGraph() {
-  //   static jsfiddleUrl = "https://jsfiddle.net/alidingling/30763kr7/";
-  console.log(data);
-
   return (
     <div className="chart">
-      heloo
+      <div className="chartTop">
+        <div className="chartTitle">TOTAL OPEX Budget Statistics</div>
+        <div className="chartSubTitle">
+          Total Budget Spent vs Total Budget Balance
+        </div>
+        <div className="spentChat">
+          Total Spent <span >N 8,282,289</span> Total
+          Balance <span className="spentBal">N 8,282,289</span>
+        </div>
+      </div>
       <BarChart
         width={500}
         height={300}
@@ -35,7 +41,7 @@ export default function BarGraph() {
         <YAxis />
         <Tooltip />
         <Legend />}
-        <Bar dataKey="Spent" fill="#e95957" barSize={12} />
+        <Bar dataKey="Spent" fill="#e95957" barSize={12} barGap={8} />
         <Bar dataKey="Balance" fill="#17c7bf" barSize={12} />
       </BarChart>
     </div>

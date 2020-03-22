@@ -78,17 +78,9 @@ function SiderDemo(props) {
               <Profile />
             </div>
           </Header>
-          <Content
-            className="content"
-            style={{
-              width: "100%",
-              margin: "40px 40px",
-              // padding: 24,
-              minHeight: 280
-            }}
-          >
-            {props.children}
-          </Content>
+          
+            <div className="content">{props.children}</div>
+          
         </Layout>
       </Layout>
     </div>

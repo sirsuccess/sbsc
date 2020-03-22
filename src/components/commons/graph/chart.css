@@ -4,29 +4,63 @@
   background-color: #fff;
   box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
   padding: 1rem;
-/* //   margin-right: 20px; */
-    border-radius: 6px;
+  /* //   margin-right: 20px; */
+  border-radius: 6px;
 }
-.grn {
-    border-radius: 8.5px;
-    background-color: #eee;
-    padding: 0.15rem 0.7rem;
-    margin: 0 0.8rem;
-    color: #4abba4;
-  }
-.rd {
-    padding: 0.15rem 0.7rem;
-    margin: 0 0.8rem;
-    border-radius: 8.5px;
-    background-color: #eee;
-    color: rgb(238, 2, 2);
-  }
 
-  .chart {
-    width: 49%;
-    height: 437px;
-    border-radius: 6px;
-    box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
-    background-color: #ffffff;
-    margin-top: 24px;
-  }
+.grn {
+  border-radius: 8.5px;
+  background-color: #eee;
+  padding: 0.15rem 0.7rem;
+  margin: 0 0.8rem;
+  color: rgb(238, 2, 2);
+}
+
+.rd {
+  padding: 0.15rem 0.7rem;
+  margin: 0 0.8rem;
+  border-radius: 8.5px;
+  background-color: #eee;
+
+  color: #4abba4;
+}
+
+.chart {
+  width: 49%;
+  height: 437px;
+  border-radius: 6px;
+  box-shadow: 0 7px 64px 0 rgba(19, 36, 78, 0.07);
+  background-color: #ffffff;
+  margin-top: 24px;
+  font-size: 14px;
+  letter-spacing: 0.17px;
+  color: #485465;
+}
+.chartTop{
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-bottom: 1em;
+}
+.chartTitle {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.22px;
+  color: #253858;
+}
+.spentChat{
+  line-height: 2;
+}
+
+.spentChat span {
+  width: 105px;
+  height: 17px;
+  border-radius: 8.5px;
+  color: #4abba4;
+  padding: 0.2em 0.5em;
+  background-color: #f2f2f2;
+}
+
+.spentBal {
+  color: #c00202 !important;
+  width: 100px;
+}

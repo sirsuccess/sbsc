@@ -8,7 +8,7 @@ import Chart from  "../../components/commons/graph/chart"
 import "./Home.css"
 
 
-export default function Home(params) {
+export default function Home() {
   return (
     <DasboardShell>
       <DashboardDate />
