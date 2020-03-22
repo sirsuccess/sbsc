@@ -1,14 +1,15 @@
 .homeFirstSec {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     /* width: 100%; */
     width: 100%;
 }
 
-.cardBig{
+.cardBig {
     width: 70%;
     margin-right: 12px;
 }
-.reassignment{
+
+.reassignment {
     width: 30%;
 }

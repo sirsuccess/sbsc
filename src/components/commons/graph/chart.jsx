@@ -12,11 +12,11 @@ import {
 } from "recharts";
 import "./chart.css";
 
-export default function BarGraph() {
+export default function BarGraph({companyName}) {
   return (
     <div className="chart">
       <div className="chartTop">
-        <div className="chartTitle">TOTAL OPEX Budget Statistics</div>
+        <div className="chartTitle">TOTAL {companyName} Budget Statistics</div>
         <div className="chartSubTitle">
           Total Budget Spent vs Total Budget Balance
         </div>
